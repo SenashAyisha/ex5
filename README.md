@@ -159,10 +159,11 @@ urlpatterns = [
 
 
 ## SERVER SIDE PROCESSING:
-ex5/Screenshot 2025-12-12 104842.png
+Screenshot 2025-12-12 104842.png
 
 ## HOMEPAGE:
-ex5/Screenshot 2025-12-12 104842.png
+Screenshot 2025-12-12 104711.png
+
 
 
 
