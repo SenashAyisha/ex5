@@ -1,0 +1,42 @@
+<!-- mathapp/templates/mathapp/math.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lamp Filament Power Calculator</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    label { display:block; margin-top:10px; }
+    input[type="number"] { padding:6px; width:200px; }
+    .error { color: red; margin-top: 12px; }
+    .result { color: green; margin-top: 12px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Power of Lamp Filament</h2>
+
+  <form method="post" novalidate>
+    {% csrf_token %}
+
+    <label>Voltage (V):</label>
+    <input type="number" name="voltage" step="any" value="{{ v }}">
+
+    <label>Current (I) (A):</label>
+    <input type="number" name="current" step="any" value="{{ i }}">
+
+    <label>Resistance (R) (Ω):</label>
+    <input type="number" name="resistance" step="any" value="{{ r }}">
+
+    <div style="margin-top:12px;">
+      <input type="submit" value="Calculate">
+    </div>
+  </form>
+  {% if error %}
+    <p class="error"> {{ error }}</p>
+  {% endif %}
+
+  {% if power != "" and not error %}
+    <p class="result">Power = {{ power }} W</p>
+  {% endif %}
+</body>
+</html>
