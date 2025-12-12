@@ -33,8 +33,7 @@ Create a HTML file to implement form based input and output.
 Publish the website in the given URL.
 
 ## PROGRAM :
-~~~
-mathapp.html
+```mathapp.html
 
 <!-- mathapp/templates/mathapp/math.html -->
 <!DOCTYPE html>
@@ -156,13 +155,16 @@ urlpatterns = [
     path('powercalc/', views.powercalc, name="powercalculator"),
     path('', views.powercalc, name="powercalcroot"),
 ]
+```
 
 
 ## SERVER SIDE PROCESSING:
-Screenshot 2025-12-12 104842.png
+<img width="768" height="183" alt="image" src="https://github.com/user-attachments/assets/49e0185d-2dc9-4e38-bde9-7ac5b4f2a6ab" />
+
 
 ## HOMEPAGE:
-Screenshot 2025-12-12 104711.png
+<img width="555" height="413" alt="image" src="https://github.com/user-attachments/assets/97bc80b1-d4c0-454f-8ebc-0a68ca695b07" />
+
 
 
 
